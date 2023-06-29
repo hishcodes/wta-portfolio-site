@@ -1,0 +1,210 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+.hero{
+    height: 100%;
+    width: 100%;
+    padding-bottom: 10px;
+    background-color: #4e23cf;
+}
+
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.logo a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.hero nav a{
+    color: white;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    transition: .4s;
+}
+
+nav ul li a:hover{
+    color: white;
+}
+
+/* spline background */
+#spline-section {
+    position: relative;
+    height: 500px;
+    width: 100%;
+
+}
+
+/* Inside spline */
+#spline-section .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-120%, -50%);
+    text-align: left;
+
+}
+
+#spline-section h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: white;
+    margin: 0px;
+}
+
+/* Spline ends */
+
+/* about me */
+.about-me-row {
+    display: flex;
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.about-me-row p{
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.column {
+    flex: 50%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.column-pic {
+    flex: 50%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.ai-pic{
+    border-radius: 10px;
+}
+
+.centered-section {
+    text-align: center;
+    padding: 50px;
+}
+
+.centered-section h1 {
+    margin-top: 0;
+}
+
+
+.centered-section img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* my works */
+.works-section {
+    text-align: center;
+    padding: 50px;
+  }
+
+.works-section p{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+
+  /* Style the company logos container */
+.company-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Style each company logo */
+.company-logo {
+    width: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 200px;
+    height: auto;
+    margin: 10px;
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: #4e23cf;
+    color: white;
+}
+
+/* gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+}
+
+/* Contact */
+.contact-details {
+    text-align: center;
+    padding: 50px;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#spline-section-contact {
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+}
+
+/* Inside spline */
+#spline-section-contact .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-120%, -50%);
+    text-align: left;
+
+}
+
+#spline-section-contact h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: white;
+    margin: 0px;
+}
