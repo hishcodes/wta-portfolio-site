@@ -9,14 +9,14 @@
 <body>
     <div class="hero">
         <nav>
-            <h2 class="logo"><a href="index.html">Hisham</a></h2>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#qualification">Qualification</a></li>
-                <li><a href="#works">My Works</a></li>
-                <li><a href="#hobbies">Hobbies</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
+        <h2 class="logo"><a href="index.php">Hisham</a></h2>
+        <ul>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="#qualification">Qualification</a></li>
+            <li><a href="#works">My Works</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="gallery.php">Gallery</a></li>
+            <li><a href="contact.php">Contact</a></li>
             </ul>
         </nav>
     </div>

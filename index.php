@@ -6,22 +6,33 @@
     <link rel="stylesheet" href="styles.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.374/build/spline-viewer.js"></script> 
-
+    <script>
+    function digitalTime()
+    {
+        var d = new Date();
+        var h = d.getHours();
+        var m = d.getMinutes();
+        var s = d.getSeconds();
+        document.getElementById("client-date").innerHTML = (h+':'+m+':'+s);
+        setTimeout(digitalTime,1000);
+    }
+    
+</script>
     <title>Hisham's Portfolio</title>
 </head>
-<body>
+<body onload="digitalTime()">
     
 <!-- Header section -->
 <div class="hero">
     <nav>
-        <h2 class="logo"><a href="index.html">Hisham</a></h2>
+        <h2 class="logo"><a href="index.php">Hisham</a></h2>
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.php">Home</a></li>
             <li><a href="#qualification">Qualification</a></li>
             <li><a href="#works">My Works</a></li>
             <li><a href="#hobbies">Hobbies</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="gallery.php">Gallery</a></li>
+            <li><a href="contact.php">Contact</a></li>
         </ul>
     </nav>
 </div>
@@ -69,13 +80,37 @@
 </section>
 
 <!-- Hobbies -->
-<section class="centered-section" id="hobbies">
-    <h1>Hobbies</h1>
-    <!-- <img src="images/qualification.png" width="800px"> -->
+
+<section class="centered-section" id="qualification">
+    <h1>My Hobbies</h1>
+    <img src="images/hobbies.jpg" width="800px">
+</section>
+
+
+    
+</section>
+<section id="about-me">
+    <div class="about-me-row">
+        <div class="column">
+        <h3>Current Time</h3>
+        <p id="client-date"></p>
+        <?php
+        date_default_timezone_set("Asia/Kolkata");
+        ?>
+        </div>
+        <div class="column-pic">
+        <?php
+        $count = file_get_contents("counter.txt");
+        echo "<h3>Total visitor count:</h3>" . $count;
+        file_put_contents("counter.txt",$count+1);
+        ?>
+        </div>
+    </div>
 </section>
 
 <!-- Footer -->
 <footer>
+
     <p>Site built by Hisham Moideen</p>
 </footer>
 
